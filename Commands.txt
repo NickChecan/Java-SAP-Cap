@@ -1,0 +1,24 @@
+* Command to create the project:
+```
+$ mvn -B archetype:generate -DarchetypeArtifactId=cds-services-archetype -DarchetypeGroupId=com.sap.cds \
+-DarchetypeVersion=RELEASE \
+-DgroupId=com.sap.cap -DartifactId=products-service -Dpackage=com.sap.cap.productsservice
+```
+
+* Command to print working directory:
+```
+$ pwd
+```
+
+* Clear old files and install the project dependencies:
+```
+$ mvn clean install
+```
+
+* Execute the application:
+```
+$ mvn clean spring-boot:run
+```
+
+* To Expose the ports you are working with, you can access **View > Find Command**, enter the option "Port: Expose" and inform the port number.
+You can view the exposed ports by accessing the "Ports: Preview" the same way
