@@ -1,9 +1,11 @@
+# For the field url, replace the string "jdbc:sqlite::memory:" with a reference to your local database file "jdbc:sqlite:/home/user/projects/products-service/sqlite.db"
+# Set the value of initialization-mode from always to never, because you’ve already initialized the database when running cds deploy --to sqlite.
 ---
 spring:
-  config.activate.on-profile: default
+  profiles: default
   datasource:
-    url: "jdbc:sqlite:file::memory:?cache=shared"
+    url: "jdbc:sqlite:/home/user/projects/products-service/sqlite.db"
     driver-class-name: org.sqlite.JDBC
-    initialization-mode: always
+    initialization-mode: never
     hikari:
       maximum-pool-size: 1
