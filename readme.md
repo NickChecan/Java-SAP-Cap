@@ -67,3 +67,6 @@ curl -X POST http://localhost:8080/odata/v4/AdminService/Categories \
 /odata/v4/AdminService/Categories(10)?$expand=parent
 /odata/v4/AdminService/Categories(1)?$expand=children
 ```
+
+Reference:
+https://developers.sap.com/mission.cap-java-app.html
